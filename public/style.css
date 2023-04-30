@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    padding:0;
+    margin:0;
+    overflow:hidden;
+	height: 600px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.forms-div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+}
+
+.forms-div form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 4px solid red;
+    background-color: rgba(103, 108, 113, .7);
+    border-radius: 20px;
+    animation: borderColors ease-in-out 2s alternate infinite;
+}
+
+@keyframes borderColors {
+    0% {
+        border-color: #4fcf70;
+    }
+    10% {
+        border-color: #fad648;
+    }
+    20% {
+        border-color: #a767e5;
+    }
+    30% {
+        border-color: #12bcfe;
+    }
+    40% {
+        border-color: #44ce7b;
+    }
+    50% {
+        border-color: #4fcf70;
+    }
+    60% {
+        border-color: #fad648;
+    }
+    70% {
+        border-color: #a767e5;
+    }
+    80% {
+        border-color: #12bcfe;
+    }
+    90% {
+        border-color: #44ce7b;
+    }
+    100% {
+        border-color: #4fcf70;
+    }
+}
+
+.forms-div form fieldset .heading center h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    color: #000;
+    text-shadow: 1px 1px 4px #fff;
+    cursor: pointer;
+}
+
+.forms-div form fieldset .heading center h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.forms-div form fieldset .heading center p {
+    color: #000;
+    font-weight: bold;
+    animation: shaking 0.6s 0s infinite alternate;
+}
+
+@keyframes shaking {
+	0% {
+		transform: skewX(-15deg);
+	}
+	5% {
+		transform: skewX(15deg);
+	}
+	10% {
+		transform: skewX(-15deg);
+	}
+	15% {
+		transform: skewX(15deg);
+	}
+	20% {
+		transform: skewX(-15deg);		
+	}
+	25% {
+		transform: skewX(15deg);		
+	}
+	30% {
+		transform: skewX(-15deg);		
+	}
+	35% {
+		transform: skewX(15deg);		
+	}
+	40% {
+		transform: skewX(-15deg);		
+	}
+	45% {
+		transform: skewX(15deg);		
+	}
+	50% {
+		transform: skewX(0deg);		
+	}
+	100% {
+		transform: skewX(0deg);		
+	}
+}
+
+.forms-div form fieldset .fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-div form fieldset .fields input {
+    padding: 8px 8px 0 8px;
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    margin: 15px 0;
+    color: #000;
+    font-weight: 600;
+    border-color: #fff;
+}
+
+.forms-div form fieldset .fields p {
+    padding-top: 8px;
+}
+
+.forms-div form fieldset .fields p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forms-div form fieldset .sign-in p {
+    color: #000;
+}
+
+.forms-div form fieldset .sign-in a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.forms-div form fieldset .sign-in a:hover {
+    color: aqua;
+}
+
+.forms-div form fieldset .fields input::placeholder {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+canvas {
+    padding:0;
+    margin:0;
+}
+div.btnbg {
+    position:fixed;
+    left:0;
+    top:0;
+}

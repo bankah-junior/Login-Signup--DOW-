@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>DOW | Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+<div class="forms-div">
+    <form method="post" action="/login">
+        <fieldset>
+            <div class="heading">
+                <center class="pt-3 pb-2">
+                    <h2>Drop Of Wisdom</h2>
+                    <h5>Login</h5>
+                    <%- include('./partials/messages.ejs') %>
+                </center>
+            </div>
+            <div class="fields">
+                <input type="email" name="email" placeholder="Email" size="35" id="email" required>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <p class="forgotten-password">
+                    <a href="#">Forgotten Password?</a>
+                </p>
+                <button class="btn btn-danger mt-2 pt-2">Submit</button>
+            </div>
+            <div class="sign-in py-3">
+                <p>
+                    Do not have an account? 
+                    <a href="/signup">Sign up</a>
+                </p>
+            </div>
+        </fieldset>
+    </form>
+</div> 
+<%- include('./partials/background.ejs') %>
+<script src="/bootstrap.js"></script>
+</body>
+</html>

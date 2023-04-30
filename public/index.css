@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* The Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    background-image: url('../images/a-book-5280551_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-container {
+    padding: 0;
+}
+
+.logo-container a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a:hover {
+    color: black;
+}
+
+.logo-container img.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    padding: 0;
+}
+
+.menu ul li a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease .2s;
+}
+
+.menu ul li a.active {
+    text-decoration: dotted !important;
+}
+
+.menu ul li a:hover {
+    text-shadow: 1px 1px 2px #000;
+}
+
+.menu ul button a {
+    text-decoration: none;
+}
+
+.menu ul button a:hover {
+    color: #fff;
+}
+
+/* End of header */
+
+/* The main body */
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0fa90;
+}
+
+.welcome .welcome-top-ul {
+    margin: 15px 0;
+}
+
+.welcome ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.welcome .welcome-img-div {
+    display: grid;
+    place-content: center;
+    height: 100px;
+}
+
+.welcome .welcome-img-div h1 {
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+.the-quotes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p.arrow {
+    display: grid;
+    place-content: center;
+}
+
+p i.arrow-down {
+    border: solid orange;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+
+}
+
+.underline {
+    width: 100%;
+    height: 2px;
+    background-color: orangered;
+}
+
+
+/* End of main body */
+
+/* The footer */
+.footer {
+    text-align: center;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+}
+/* End of footer */

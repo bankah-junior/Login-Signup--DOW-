@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>DOW | Sign-Up</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+<div class="forms-div">
+    <form method="post" action="/signup">
+        <fieldset>
+            <div class="heading">
+                <center class="pt-3 pb-2">
+                    <h2>Drop Of Wisdom</h2>
+                    <h5>Sign Up</h5>
+                    <%- include('./partials/messages.ejs') %>
+                </center>
+            </div>
+            <div class="fields">
+                <input type="text" placeholder="Full Name" size="35" name="name" value="<%= typeof name != 'undefined' ? name : '' %>" required>
+                <input type="email" placeholder="Email" name="email" id="email"  value="<%= typeof email != 'undefined' ? email : '' %>" required>
+                <input type="password" placeholder="Password" name="password" id="password" value="<%= typeof email != 'undefined' ? password : '' %>" required>
+                <input type="password" placeholder="Confirm Password" name="password2" id="password2" value="<%= typeof email != 'undefined' ? password2 : '' %>" required>
+                <button class="btn btn-danger mt-2 pt-2" id="button">Submit</button>
+            </div>
+            <div class="sign-in py-3">
+                <p>
+                    Already have an account? 
+                    <a href="/login">Sign in</a>
+                </p>
+            </div>
+        </fieldset>
+    </form>
+</div> 
+<%- include('./partials/background.ejs') %>
+<!-- <script src="/signup.js"></script> -->
+<script src="/bootstrap.js"></script>
+</body>
+</html>
